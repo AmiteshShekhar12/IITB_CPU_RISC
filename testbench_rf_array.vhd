@@ -45,12 +45,12 @@ end entity testbench_rf_array;
 
 architecture behv of testbench_rf_array is
 
-	component RF is
+	component register_file_array is
 		port ( clk, rf_w, IP_W: in std_logic;
 			 a1, a2, a3 : in std_logic_vector (2 downto 0);
 			 d3, IP_in : in std_logic_vector (15 downto 0);
 			 d1, d2, IP_out : out std_logic_vector (15 downto 0):="0000000000000000");
-	end component RF;
+	end component register_file_array;
 
 	signal clk, rf_w,IP_W : std_logic := '0';
 	signal a1, a2, a3 : std_logic_vector (2 downto 0):="000" ;
@@ -67,6 +67,6 @@ architecture behv of testbench_rf_array is
 		a1 <= "010";
 		a2 <= "100";
 		
-		rf1 : RF port map (clk, rf_w,IP_w, a1, a2, a3, d3, IP_in, d1, d2, IP_out);
+		rf1 : register_file_array port map (clk, rf_w,IP_w, a1, a2, a3, d3, IP_in, d1, d2, IP_out);
 		
 end behv;
