@@ -3,11 +3,11 @@
 -- use ieee.numeric_std.all;
 -- use ieee.std_logic_unsigned.all;
 
--- entity testbench_rf is
--- end entity testbench_rf;
+-- entity testbench_rf_array is
+-- end entity testbench_rf_array;
 
 
--- architecture behv of testbench_rf is
+-- architecture behv of testbench_rf_array is
 
 -- 	component register_file_array is
 -- 		port ( clk, rf_w: in std_logic;
@@ -39,11 +39,11 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
-entity testbench_rf is
-end entity testbench_rf;
+entity testbench_rf_array is
+end entity testbench_rf_array;
 
 
-architecture behv of testbench_rf is
+architecture behv of testbench_rf_array is
 
 	component RF is
 		port ( clk, rf_w, IP_W: in std_logic;
