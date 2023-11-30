@@ -64,15 +64,15 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
-entity RF is
+entity register_file_array is
 	port ( clk, rf_w, IP_W: in std_logic;
 			 a1, a2, a3 : in std_logic_vector (2 downto 0);
 			 d3, IP_in : in std_logic_vector (15 downto 0);
 			 d1, d2, IP_out : out std_logic_vector (15 downto 0):="0000000000000000");
-end entity RF;
+end entity register_file_array;
 
 
-architecture struct of RF is
+architecture struct of register_file_array is
 
 	type rf_array is array (0 to 7) of std_logic_vector (15 downto 0);
 	signal RF : rf_array := (others => ( others => '0'));
