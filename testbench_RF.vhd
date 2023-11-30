@@ -36,11 +36,11 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
-entity testbench_rf is
-end entity testbench_rf;
+entity testbench_RF is
+end entity testbench_RF;
 
 
-architecture behv of testbench_rf is
+architecture behv of testbench_RF is
 
 	component RF is
 		port ( clk, rf_w, IP_W: in std_logic;
