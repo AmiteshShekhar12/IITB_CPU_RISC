@@ -1,3 +1,5 @@
+--takes one 16 bits input and based on the select line "sel" value, takes that value to one of the eight 16 bits ouptut lines
+
 library ieee;
 use ieee.std_logic_1164.all;
 
